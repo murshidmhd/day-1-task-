@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for in manly used object but it can use array not reccomended 
+        // q1
+        const device = { brand: "Lenovo", os: "Ubuntu", ram: "16GB" };
+        for (let phone in device) {
+            console.log(`${phone} - ${device[phone]}`)
+        }
+
+        // q2
+        const user = {
+            username: "murshid_dev",
+            followers: 1200,
+            verified: true
+        };
+        for (let hey in user) {
+            console.log(`${hey} => ${user[hey]}`)
+        }
+
+        // q3
+        const profile = {
+            name: "Murshid",
+            age: 18,
+            city: "Malappuram",
+            skills: "Web Dev"
+        };
+        let count = 0;
+        for (let key in profile) {
+            count++;
+        }
+        console.log(count)
+
+
+
+
+
+        // for of used mainly array 
+        // q1
+        const cities = ["Kozhikode", "Malappuram", "Thrissur"];
+        for (let helo of cities) {
+            console.log(helo)
+        }
+
+        // q2
+        const colors = ["red", "green", "blue"];
+        for (let hey of colors) {
+            console.log(hey)
+        }
+
+        // q3
+        const fruits = ["apple", "banana", "mango"];
+        for (let hey of fruits) {
+            console.log(hey.toUpperCase())
+        }
+
+        // q4
+        const name = "Murshid";
+        for (let letter of name) {
+            console.log(letter)
+        }
+
+        // q5
+        const nums = [5, 10, 15];
+        for (let doubled of nums) {
+            console.log(doubled + doubled)
+        }
+
+        // q6
+        const skills = ["HTML", "CSS", "JavaScript"];
+        for(let helo of skills){
+            console.log(`${helo} #$` )
+        }
+        
+
+
+
+
+    </script>
+
+</body>
+
+</html>
