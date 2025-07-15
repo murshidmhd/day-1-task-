@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce</title>
+</head>
+
+<body>
+    <script>
+        // reduce()
+        // is used to The .reduce() method is used to combine all items in an array into a single value.
+        // just like sum or multiply all numbers
+
+        // syntax....
+        // array.reduce((accumulator, currentValue) => {
+        //     return updatedAccumulator;
+        // }, initialValue);
+
+        // q1
+        nums = [10, 20, 30];
+
+        total = nums.reduce((sum, num) => sum + num, 0);
+
+        console.log(total);
+
+        // q2
+        const numbers = [5, 10, 15];
+        total = numbers.reduce((dash, num) => num + dash, 0)
+        console.log(total)
+        // in this 0 is the intial value 
+
+        // q3
+        nums = [2, 3, 4];
+        total = nums.reduce((hey, num) => hey * num)
+        console.log(total)
+
+        // q4
+        const students = [
+            { name: "Murshid", marks: 85 },
+            { name: "Ameen", marks: 92 },
+            { name: "Faheem", marks: 78 }
+        ];
+        total = students.reduce((num,student) => student.marks + num, 0)
+        console.log(total)
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
