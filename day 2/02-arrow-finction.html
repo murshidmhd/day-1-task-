@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Arrow functions 
+        // are a shorter way to write regular functions.
+        // synatx
+        const greet = () => {
+            console.log("Hello, Murshid!");
+        };
+        greet();
+
+        // If your function has only one line and returns something, you can skip {} and return: eg;
+        const multiply = (a, b) => a * b;
+        console.log(multiply(4, 5));
+
+
+        // q1 
+        let double = (a) => {
+            return a * 2;
+        }
+        console.log(double(10))
+
+
+        // q2
+        let greet2 = (name) => `hello,${name}`;
+
+        console.log(greet2('anu'))
+
+        // q3 
+        let isEven = (a) => {
+            return a % 2 === 0;
+        }
+        console.log(isEven(3))
+
+        // q4
+        let getLength = (a) => a.length;
+        console.log(getLength('anu'))
+
+
+
+
+    </script>
+
+</body>
+
+</html>
