@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // A callback is simply a function passed as an argument to another function — and it gets called later
+        
+        function isEven(num,callback) {
+            if (num % 2 === 0){
+                callback()
+            }
+            else {
+                console.log('not even number')
+            }
+        }
+        function hey (){
+            console.log('yes its it even')
+        }
+        isEven(2,hey)
+        
+
+
+
+    </script>
+
+</body>
+
+</html>

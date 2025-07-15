@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Global	Outside functions	Anywhere in code
+        // Function Scope	Inside a function	Only in that function
+        // Block Scope	Inside {} with let/const	Only inside the block
+
+        let language = "JavaScript";
+
+        function printLanguage() {
+            console.log(language);
+        }
+
+        printLanguage();
+
+        // function showAge() {
+        //     let age = 18;
+        // }
+        // console.log(age);
+
+        // if (true) {
+        //     const color = "blue";
+        // }
+        // console.log(color);
+
+
+
+
+        // Lexical Environment or Lexical Scope
+        //  it is simply say just like if we assign a varibale at inside a function1 inthe inside ther is an other function named function2 so we can acces the the varibale inside the 2nd function 
+        // eg;
+        function outer() {
+            let outerVar = "I’m outside!";
+
+            function inner() {
+                console.log(outerVar); // ✅ Access outerVar because it's in the lexical scope
+            }
+
+            inner();
+        }
+
+        outer();
+
+
+
+
+
+        // ~ Functions look where they’re written, not where they’re called
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

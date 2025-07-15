@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recursion</title>
+</head>
+
+<body>
+    <script>
+        // A recursive function is a function that calls itself.
+        // But it must have:
+
+        // ✅ A base case to stop
+
+        // 🔁 A recursive case to repeat with smaller input
+
+
+        //         ❗ Why Use Recursion?
+
+        // It's useful when:
+
+        //     You're solving problems with repeating patterns
+
+        //     You're dealing with trees, folders, menus, JSON structures
+
+        //     You don't know how many levels deep it goes
+
+        // ❗ Why Use Recursion?
+
+        // It's useful when:
+
+        //     You're solving problems with repeating patterns
+
+        //     You're dealing with trees, folders, menus, JSON structures
+
+        //     You don't know how many levels deep it goes
+
+        // eg;
+        function countdown(n) {
+            if (n === 0) {
+                console.log("Done!");
+                return;
+            }
+
+            console.log(n);
+            countdown(n - 1);
+        }
+
+        countdown(3);
+
+
+        // q1
+        function numbers(num) {
+            if (num === 1) {
+                console.log('no more')
+                return;
+            }
+            console.log(num);
+            numbers(num - 1)
+
+
+        }
+        numbers(5)
+
+        // q2
+        function numbers2(num2) {
+            if (num2 === 0) {
+                return;
+            }
+            console.log(num2);
+            numbers2(num2 - 1)
+        }
+        numbers2(10)
+
+        // q3
+        function sum(num) {
+            if (num === 1) {
+                return 1;
+            }
+            return num + sum(num - 1);
+            
+        }
+        console.log(sum(5));
+
+        
+
+
+    </script>
+
+</body>
+
+</html>
