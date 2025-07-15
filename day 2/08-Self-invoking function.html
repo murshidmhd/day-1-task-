@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-invoking function</title>
+</head>
+
+<body>
+    <script>
+        // Self-Invoking Function
+        // A self-invoking function is a function that runs immediately without being called manually.
+        // syntax
+        (function () {
+            console.log("I ran automatically!");
+        })();
+
+        //         Run code immediately
+
+        // Avoid polluting global scope (good for variable safety)
+
+        // Used in older JS modules or patterns
+
+        // basic 
+        (function () {
+            console.log("Hello Murshid!");
+        })();
+
+
+
+        // with parameters
+        (function (name) {
+            console.log("Hi " + name + "!");
+        })("Murshid");
+
+
+        // asssign to a variable
+        let result = (function (a, b) {
+            return a + b;
+        })(4, 6);
+
+        console.log(result);
+
+
+
+
+
+        // you must do more tasks 
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
