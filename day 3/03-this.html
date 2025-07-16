@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+
+<body>
+    <script>
+        //  In JavaScript, this refers to the object that is executing the current function.
+
+        // It depends on where and how the function is called.
+        // eg;
+        const user = {
+            name: "Murshid",
+            sayHello: function () {
+                console.log(`Hello, I am ${this.name}`);
+            }
+        };
+
+        user.sayHello(); // ➝ "Hello, I am Murshid"
+
+
+        let laptop ={
+            brand :'lenovo' ,
+            ram : "16gb",
+            os: "Ubuntu",
+            details : function(){
+                console.log(`thsi ${this.brand} runs on ${this.os} with ${this.ram} RAM`)
+            }
+
+        }
+
+        laptop.details();
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>method</title>
+</head>
+
+<body>
+    <script>
+        // A method is just a function inside an object
+        // eg;
+        const phone = {
+            brand: "iPhone",
+            price: 80000,
+            showDetails: function () {
+                console.log(`${this.brand} costs ₹${this.price}`);
+            }
+        };
+
+        phone.showDetails(); 
+
+
+    </script>
+
+</body>
+
+</html>

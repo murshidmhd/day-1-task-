@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+    <script>
+        // object
+        // A JavaScript object is a collection of key-value pairs. It's used to store related data and functions together.
+        let phone = {
+            apple: 20000,
+            mac: 10000,
+            vivo: 20000,
+            iqoo: 30000,
+        }
+
+        console.log(phone['mac'])
+        phone.mac = 1;
+        phone.poco = 100000;
+
+        console.log(phone.mac)
+        console.log(phone['vivo'])
+
+        for (let key in phone) {
+            console.log(phone[key])
+
+        }
+        //         Object Literal	✅ Best for small objects
+        // new Object()	🔧 Less used, more manual
+        // Constructor Function	✅ For creating multiple similar objects
+
+    </script>
+
+</body>
+
+</html>
