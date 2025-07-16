@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructuring & Object Destructuring</title>
+</head>
+
+<body>
+    <script>
+        // 1. Array Destructuring
+        // Destructuring lets you unpack values from an array into variables easily.
+        // eg;
+        const colors = ["red", "green", "blue"];
+
+        const [first, second, third] = colors;
+
+        console.log(first);  // red
+        console.log(second); // green
+        console.log(third);  // blue
+        // q1
+        const laptop = ["Lenovo", "16GB", "Ubuntu"];
+        // Destructure the above into brand, ram, and os
+        const [brand, ram, os] = laptop;
+
+        // 2. Object Destructuring
+        // You can extract properties from objects into variables.
+        // eg;
+        const user = {
+            name: "Murshid",
+            age: 18,
+            course: "Full Stack"
+        };
+
+        const { name, age } = user;
+        const { course } = user;
+
+        console.log(name); // Murshid
+        console.log(age);  // 18
+        console.log(course)
+
+        // Rename while Destructuring:
+        const { course: learning } = user;
+
+        console.log(learning); // Full Stack
+
+
+        // q1;
+
+        const student = {
+            name: "Murshid",
+            age: 18,
+            tech: "Web Dev"
+        };
+        const { name1, tech } = student;
+        console.log(`${name} ,${tech} `)
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
