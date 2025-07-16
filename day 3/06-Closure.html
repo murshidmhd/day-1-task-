@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body>
+    <script>
+
+
+        // A closure is when a function remembers variables from the scope where it was created, even after that scope is gone.
+
+        //  A closure gives you access to an outer function’s variables from an inner function.
+
+
+        function outer() {
+            let count = 0;
+
+            function inner() {
+                count++;
+                console.log(count);
+            }
+
+            return inner;
+        }
+
+        let counter = outer(); // outer() is called, and it returns inner()
+        counter(); // 1
+        counter(); // 2
+        counter(); // 3
+        counter(); // 4
+
+
+
+        //     Why Closures are Useful:
+        //  Data privacy (like private variables)
+        //  Remembering values
+        //  Functions with memory
+
+
+        // q1
+        function hey() {
+            let count = 10;
+            return function () {
+                console.log("Count is:", count);
+            };
+        }
+
+        let show = hey();
+        show(); // What do you think will be the output?
+        
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
