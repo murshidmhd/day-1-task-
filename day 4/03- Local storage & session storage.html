@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Local storage & session storage</title>
+</head>
+
+<body>
+    <script>
+
+        // local storage 
+        //         Stores data in the browser with no expiration.
+
+        // Data remains even after the browser is closed.
+
+        // Storage limit: ~5MB per origin (domain).
+
+
+        // Save data
+        localStorage.setItem("username", "Murshid");
+
+        // Get data
+        console.log(localStorage.getItem("username")); // ➝ "Murshid"
+
+        // Remove data
+        localStorage.removeItem("username");
+
+        // Clear all data
+        localStorage.clear();
+
+
+
+
+
+
+        //      What is Session Storage?
+
+        // Similar to localStorage, but:
+
+        // Data is cleared when the tab or browser is closed.
+
+        // Useful for temporary session data.
+
+        // Save data
+        sessionStorage.setItem("score", "100");
+
+        // Get data
+        console.log(sessionStorage.getItem("score")); // ➝ "100"
+
+        // Remove data
+        sessionStorage.removeItem("score");
+
+        // Clear all
+        sessionStorage.clear();
+
+
+        // eg 
+        localStorage.setItem('name', 'murshid')
+        console.log(localStorage.getItem('name'))
+        localStorage.removeItem('name')
+        console.log(localStorage.getItem('name'))
+        // localStorage.setItem() requires two arguments:
+        // a key (like a label)
+        // a value (data you want to store)
+
+
+
+
+
+        // q1 local storage 
+        localStorage.setItem('userName', 'murshid')
+        console.log(localStorage.getItem('userName'))
+        localStorage.setItem('userName', 'Murshid YT')
+        localStorage.removeItem('userName')
+        sessionStorage.setItem('loggedIn', 'true')
+
+        function saveScore(score) {
+            localStorage.setItem('number', )
+
+        }
+
+
+    </script>
+</body>
+
+</html>
