@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // lexical scope 
+        function outer() {
+            let msg = "Hello";
+            function inner() {
+                // console.log(msg); // ➝ What will it log?
+            }
+            inner();
+            console.log(msg)
+        }
+        outer();
+
+
+
+        // the difference between arrow and traditional function is not need name to arrow function we can assign that to a variable . make short code by using arrow function 
+        // we use => in arrow function 
+        // if the that in one line we can remove the {} and return 
+
+
+        let helo = (a, b) => {
+            return a + b
+        }
+
+
+
+        // Arrow functions do not have their own this. They inherit this from their surrounding (lexical) scope.
+
+        // Traditional functions have their own this context. When used as methods, this refers to the object.
+
+        const obj = {
+            value: 100,
+            arrow: () => this.value,
+            regular: function () { return this.value; }
+        };
+        // obj.regular() returns 100 (this = obj)
+        // obj.arrow() returns undefined (this from outer scope)
+
+
+
+
+        // q1
+        let hello1 = function () {
+            console.log(`hello world`)
+        }
+        hello1()
+
+        // q2
+        const great = (name) => { return 'hi' + name }
+        great('murshid')
+        // q3
+        let object = {
+            name: "murshid",
+            arrow: console.log(this.name),
+            hello: function () {
+                console.log(this.name)
+            }
+        }
+        //  q4
+
+
+        function hello(...num) {
+            return num.reduce((acc, n) => acc + num, 0)
+        }
+        hello(1, 2, 3)
+
+        // q5
+
+        arr1 = [1, 2, 3]
+        arr2 = [4, 6]
+
+
+        // q7
+        let arr3 = [1, 2, 3]
+        let arr4 = arr3.map(num => num * 2)
+
+
+        // q8
+
+        let arr5 = [5, 7, 10, 15, 20]
+        arr5.filter(num => num > 10)
+
+        // q9
+
+        let arr7 = [10, 20, 30, 40, 50]
+        let arr8 = arr7.slice(2, 4)
+
+        // q11 q12 q14
+
+        // i want explanation or revsion of this topics
+
+
+
+
+
+        // setTimeout(function () {           // 1. An anonymous function is passed as a callback
+        //     console.log("Time's up!");      // 2. This code runs after 2 seconds
+        // }, 1000);
+
+
+
+        //test 2
+
+
+        // q1
+        let student = {
+            name: 'murshid',
+            marks: 50,
+            showMark: function () {
+                console.log(this.name + "" + this.marks)
+            }
+        }
+        student.showMark()
+        // q2
+        let student1 = {
+            name: 'murshid',
+            marks: 50,
+            showMark: function () {
+
+                console.log(this.name + "" + this.marks)
+            }
+        }
+
+        // q3
+
+
+        // same 
+
+
+
+        function foo() {
+            console.log(this);
+        }
+        foo(); // `this` is the global object (or undefined in strict mode)
+
+
+
+
+        const obj1 = {
+            value: 10,
+            arrow: () => console.log(this.value)
+        };
+        obj1.arrow(); // `this` is **not** `obj`—it’s inherited from the parent scope[4].
+
+        // q4
+
+        // [a = 5, b = 9]
+        // let [b, a] = [a, b]
+        // console.log(a)
+
+
+        const user = { username: "Max", email: "max@email.com" };
+        const { username, email } = user
+        console.log(username)
+
+
+        console.log(a);
+        var a = 7;
+
+
+
+
+        function hello2(name,callback) {
+            console.log(`helo world ${name}`)
+            callback()
+
+        }
+        function sayBye() {
+            console.log(`hey`)
+
+        }
+        hello2('anu',sayBye)
+
+
+
+
+        
+
+    </script>
+
+</body>
+
+</html>
