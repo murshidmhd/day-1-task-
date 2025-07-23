@@ -90,10 +90,10 @@
 
 
 
-
+        // q1
         function hello() {
 
-            for (i = 1; i <= 50; i++) {
+            for (i = 1; i <= 10; i++) {
                 if (i % 3 === 0 && i % 5 === 0) {
                     console.log('FizzBuzz')
 
@@ -113,6 +113,168 @@
         hello()
 
 
+
+        // q2
+
+        function checkPalindrome(value) {
+            value = value.toLowerCase()
+
+
+            let reversed = value.split('').reverse().join('')
+
+            return value === reversed
+
+        }
+        console.log(checkPalindrome(''))
+
+
+
+
+
+        // q3
+
+        let arr = [1, 5, 10, 3, 6]
+        function largest(...num1) {
+            result = num1.reduce((acc, num) => num < acc ? acc : num);
+            console.log(result)
+        }
+        largest(1, 2, 9, 3, 4, 5)
+
+
+        function largest2(...num1) {
+            console.log(num1)
+            let max = num1[0]
+            for (let hey of num1) {
+                if (hey > max) {
+                    max = hey
+                }
+
+            }
+            return max;
+        }
+
+        console.log(largest2(1, 2, 3, 4, 5))
+
+
+        // q4    reverse a string 
+
+        // function reverse(str) {
+        //     str.split('')
+        //     let result = str.reverse().join('')
+        //     console.log(result)
+        //     return result;
+
+        // }
+        // reverse('hello')
+
+
+
+
+        // q5
+
+        let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        function largerEven() {
+            let arr1EvenNumber = arr1.filter(num => num % 2 === 0);
+            console.log(arr1EvenNumber)
+            let result = arr1EvenNumber.reduce((acc, num) => acc + num, 0)
+            console.log(result)
+        }
+        largerEven()
+
+
+
+        // q6
+
+        let arr2 = [1, 2, 3, 3, 4, 5]
+
+        let removedDuplicate = new Set()
+
+
+
+        //  doubt in the this keyword 
+        // let obj = {
+        //     a : 10 ,
+        //     x : function (){
+        //         console.log(this.x)
+        //     }
+        // }
+        // obj.x()
+
+
+
+
+
+
+        function secondIndexOf(str1, str2) {
+            let firstIndex = str1.indexOf(str2);
+            console.log(firstIndex)
+            result = str1.indexOf(str2, firstIndex + 1)
+            console.log(result)
+
+        }
+        secondIndexOf('hello bollo', 'lo')
+
+
+
+
+
+
+        function reverse(str) {
+            if (str.length < 1) {
+                return str;
+            }
+            let result = str.slice(-1) + reverse(str.slice(0, -1))
+            // console.log(result)
+            return result;
+
+        }
+
+
+        console.log(reverse('hello'))
+
+
+
+
+        var a = 100
+
+        {
+            var a = 10;
+            let b = 20;
+            const c = 30
+            console.log(a)
+            console.log(b)
+            console.log(c)
+        }
+
+
+
+
+
+        // function brokenAdd(a, b) {
+        //     let c = a + b;  // Oops! No return.
+        //     console.log(c)
+        // }
+        // console.log(brokenAdd(2, 3));  // undefined
+
+
+        // closure
+
+        function hello() {
+            let a = 100
+            function hey() {
+                let b = 50
+                function hi() {
+                    console.log(a, b)
+                } hi()
+                return b
+            } hey()
+            // return a
+        } hello()
+        // let closed = hello()
+
+
+
+        console.log()
 
 
     </script>
