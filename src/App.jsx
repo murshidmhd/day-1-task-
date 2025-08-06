@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import WelcomeCard from "./components/wlcomeCard";
+import { useRef } from "react";
 
 // function App(){
 //     const [inputValue,setInputVAlue] =useState("")
@@ -194,17 +195,69 @@ export default app*/
 
 export default App*/
 
-function app() {
-    const handleUpload= () =>{
-        alert('Upload Started')
-    } 
-    
-  return (
-    <div>
-      <button onClick={() => alert("Download Started")}>Download</button>
-      <button onClick={handleUpload}>Upload </button>
-    </div>
-  );
-}
+// function app() {
+//     const handleUpload= () =>{
+//         alert('Upload Started')
+//     }
 
-export default app;
+//   return (
+//     <div>
+//       <button onClick={() => alert("Download Started")}>Download</button>
+//       <button onClick={handleUpload}>Upload </button>
+//     </div>
+//   );
+// }
+
+// export default app;
+
+// function App (){
+//     const inputRef = useRef()
+//     function handleClick(){
+//         inputRef.current.focus()
+//     }
+// return(
+//     <div>
+//         <input ref={inputRef} type="text" placeholder="type somthing..." />
+//         <button onClick={handleClick}> Focus Input</button>
+//     </div>
+// )
+
+// }
+
+// export default App
+
+// function App() {
+//   const inputRef = useRef();
+
+//   function handleFocus() {
+//     inputRef.current.focus();
+//   }
+
+//   function handleClear() {
+//     inputRef.current.value = "";
+//   }
+//   return (
+//     <div>
+//       <input type="text" placeholder=" type sommthng..." ref={inputRef}/>
+//       <div>
+//         <button onClick={handleFocus}>Focus input </button>
+//         <button onClick={handleClear} style={{marginLeft:"10px"}}> Clear Input</button>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// function App() {
+//   useEffect(() => {
+//     console.log("component has mounted(shown or screen)");
+//   }, []);
+//   return (
+//     <div>
+//       <p> hello react</p>
+//     </div>
+//   );
+// }
+
+// export default App;
