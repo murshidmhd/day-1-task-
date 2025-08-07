@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Component, useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -261,3 +261,40 @@ export default App*/
 // }
 
 // export default App;
+
+// class Counter extends Component {
+//   constructor() {
+//     super();
+
+//     this.state = {
+//       count: 0,
+//     };
+//   }
+// }
+
+
+
+
+
+
+// class Counter extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       count: 0
+//     };
+//   }
+
+//   handleIncrimment = () => {
+//     thi
+//   }
+
+//   render() {
+//     return <h2>Count: {this.state.count}</h2>;
+//   }
+// }
+
+// export default Counter;
+
+
+
